@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "346498539778",
+    "firebase_url": "https://dairyapplication-db529.firebaseio.com",
+    "project_id": "dairyapplication-db529",
+    "storage_bucket": "dairyapplication-db529.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346498539778:android:126ed4a1e29ea4394b221b",
+        "android_client_info": {
+          "package_name": "com.vella.dairyapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346498539778-d6sk549cmh18nm8caccfph027b3ctanm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vella.dairyapplication",
+            "certificate_hash": "7a662408c1905ac8dc39896a99f5b9de784bfee0"
+          }
+        },
+        {
+          "client_id": "346498539778-ivv0btsjdttdkdelv20muma5b1vffnm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA47qE3uXMQca_KdpO2o3sptyVgOaxQek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346498539778-ivv0btsjdttdkdelv20muma5b1vffnm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

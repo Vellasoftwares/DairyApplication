@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mai_dairy_logo"
+        android:alpha="0.2"/>
+
+    <TextView
+        android:id="@+id/text_price_inc_all_taxes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price(inc. all taxes)"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_one_litre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1 Litre"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_price_inc_all_taxes" />
+
+    <TextView
+        android:id="@+id/text_one_litre_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Price"
+        app:layout_constraintLeft_toRightOf="@+id/text_one_litre"
+        app:layout_constraintTop_toBottomOf="@+id/text_price_inc_all_taxes" />
+
+    <TextView
+        android:id="@+id/text_half_litre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="1/2 Litre"
+        app:layout_constraintLeft_toRightOf="@+id/text_one_litre_price"
+        app:layout_constraintTop_toBottomOf="@+id/text_price_inc_all_taxes" />
+
+    <TextView
+        android:id="@+id/text_half_litre_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Price"
+        app:layout_constraintLeft_toRightOf="@+id/text_half_litre"
+        app:layout_constraintTop_toBottomOf="@+id/text_price_inc_all_taxes" />
+
+    <TextView
+        android:id="@+id/text_Packages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Packages"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_one_litre_price" />
+
+    <RadioGroup
+        android:id="@+id/package_radio_grp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Packages">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/month"
+            android:text="30 Days" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/one_day"
+            android:text="1 Day(trial)" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/edit_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Select Start Date"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/package_radio_grp" />
+
+
+    <RadioGroup
+        android:id="@+id/day_type_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_start_date">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/daily"
+            android:text="Daily" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/alternative_days"
+            android:text="Alternative" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/day_time_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_type_radiogroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/morning"
+            android:text="Morning" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/evening"
+            android:text="Evening" />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/day_time_radiogroup"
+        android:layout_marginTop="20dp"
+        android:hint="Add Quantity"
+        android:padding="16dp"
+        android:background="@drawable/edittext_border"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/proceed_button"
+        android:background="@color/theme_color"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
